@@ -1,0 +1,31 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} CLASSIFY {% endblock %}
+
+{% block content %}
+    <div class="auth-wrapper">
+        <div id="container" class="auth-content">
+            <div class="auth-bg">
+                <span class="r"></span>
+                <span class="r s"></span>
+                <span class="r s"></span>
+                <span class="r"></span>
+            </div>
+            <div class="card">
+                <div id="cardContainer" class="card-body text-center">
+                    <h3 class="mb-4">CLASSIFY YOUR PLANT</h3>
+
+                    <form style="display: flex" id="classForm" role="form" enctype=multipart/form-data method="post" action="/final"></form>
+
+                    <button id="btnSubmit" class='btn btn-primary shadow-2 mb-4' form="classForm" formaction="final">Finish Plantification!</button>
+                    <p class="mb-2 text-muted">&copy; <a target="_blank" href="https://plantpal.utwente.nl">PlantPal</a>- coded by <a target="_blank" href="https://plantpal.utwente.nl">Group 10</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+{% block javascripts %}
+    <script src="/static/assets/js/clasiffier.js"></script>
+{% endblock javascripts %}

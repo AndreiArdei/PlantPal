@@ -1,0 +1,57 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Register Plant {% endblock %}
+
+{% block content %}   
+
+    <div class="auth-wrapper">
+        <div class="auth-content">
+            <div class="auth-bg">
+                <span class="r"></span>
+                <span class="r s"></span>
+                <span class="r s"></span>
+                <span class="r"></span>
+            </div>
+            <div class="card">
+                <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="feather icon-activity activity-icon"></i>
+                    </div>
+                    <h3 class="mb-4">
+                        Setup
+                    </h3>
+
+                    <span class="mb-0 text-muted">
+                        Register your pal!
+                    </span>
+
+                    <br />
+                    <br />
+                    
+                    <form role="form" enctype=multipart/form-data method="post">
+
+                        <div class="input-group mb-4">
+                            <input class="form-control" name="name" placeholder="Plantname">
+                        </div>
+                        <p class="mb-2 text-muted">
+                            Upload a picture of your plant, we will classify it and determine the optimal conditions for your plant to grow!
+                        </p>
+                        <div class="input-group mb-4">
+                                <input type="file" name="photo" class="form-control button" placeholder="Add a photo of your plant" aria-label="" aria-describedby="basic-addon1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary shadow-2 mb-4">Setup!</button>
+
+                    </form>
+
+                    <br />
+                    <p class="mb-2 text-muted">
+                        &copy; <a target="_blank" href="https://bit.ly/37fF9RT">CodedThemes</a> 
+                        - coded by <a target="_blank" href="https://appseed.us">AppSeed</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
